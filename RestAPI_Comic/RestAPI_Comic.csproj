@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB6CAA62-ABAC-4AD2-BA55-6570F07B7318}</ProjectGuid>
+    <ProjectGuid>{A9032BF1-D34A-4A14-B412-41B86A3A7C80}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Async_RestAPI</RootNamespace>
-    <AssemblyName>Async_RestAPI</AssemblyName>
+    <RootNamespace>RestAPI_Comic</RootNamespace>
+    <AssemblyName>RestAPI_Comic</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,7 +63,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
