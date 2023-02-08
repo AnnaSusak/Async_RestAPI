@@ -40,6 +40,9 @@ namespace RestAPI_Comic
                 maxNum = comic.Num;
             }
             imageComic.Source = new BitmapImage(new Uri(comic.Img));
+            titleComic.Text= comic.Title;
+            numComic.Text= comic.Num.ToString();
+            dataComic.Text =comic.Day+'.'+comic.Month+'.'+ comic.Year;
         }
         private async void btnPrev_Click(object sender, RoutedEventArgs e)
         {
@@ -72,6 +75,28 @@ namespace RestAPI_Comic
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             await LoadImage();
+        }
+
+        private async void btnRandom_Click(object sender, RoutedEventArgs e)
+        {
+            currentNum=new Random().Next(0,maxNum);
+            if (currentNum < maxNum)
+            {
+                btnPrev.IsEnabled = true;
+            }
+            if (currentNum == maxNum)
+            {
+                btnNext.IsEnabled = false;
+            }
+            if (currentNum > 1)
+            {
+                btnNext.IsEnabled = true;
+            }
+            if (currentNum == 1)
+            {
+                btnPrev.IsEnabled = false;
+            }
+            await LoadImage(currentNum);
         }
     }
 }

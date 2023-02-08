@@ -5,16 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RestAPI_Comic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="Comics Viewer" Height="450" Width="800" Loaded="Window_Loaded" ResizeMode="NoResize" Background="#F1E1C2">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Name="btnPrev" Width="150" Height="50" Content="Previous" Click="btnPrev_Click"/>
-            <Button Name="btnNext" Width="150" Height="50" Content="Next" Click="btnNext_Click" Margin="10"/>
+            <Button Name="btnPrev" Width="150" Height="50" Content="Previous" Background="#EFC682"
+                    Click="btnPrev_Click" FontSize="18" BorderThickness="0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Name="btnNext" Width="150" Height="50" Content="Next" Background="#EFC682"
+                    Click="btnNext_Click" Margin="10" FontSize="18" BorderThickness="0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Name="btnRandom" Width="150" Height="50" Content="Random" Background="#EFC682"
+                    Click="btnRandom_Click" Margin="10" FontSize="18" BorderThickness="0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
-        <Image Grid.Row="1" Margin="10" Name="imageComic"/>
+        <TextBlock Grid.Row="1" Margin="10" Name="titleComic" Text="title" TextAlignment="Center" FontSize="30" FontFamily="SimHei" FontWeight="Bold"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Image Grid.Row="2" Margin="10" Name="imageComic" MaxHeight="300" MaxWidth="700"/>
+            <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Grid.Row="1" Margin="10" Text="number of comics:" FontSize="20"/>
+                <TextBlock Grid.Row="1" Margin="10" Name="numComic" FontSize="20"/>
+                <TextBlock Grid.Row="1" Margin="10" Text="date of creating:" FontSize="20"/>
+                    <TextBlock Grid.Row="1" Margin="10" Name="dataComic" FontSize="20"/>
+                </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>
