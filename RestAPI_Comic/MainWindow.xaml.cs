@@ -33,7 +33,7 @@ namespace RestAPI_Comic
         private async Task LoadImage(int num=0)
         {
             //API
-           var comic= await WorkProcess.Load(num);
+           var comic= await WorkProcess.LoadComic(num);
             currentNum = comic.Num;
             if (num==0)
             {

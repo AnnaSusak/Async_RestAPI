@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPI_Comic", "..\RestAPI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApi_Library", "..\RestApi_Library\RestApi_Library.csproj", "{BBAF5F0B-11A5-4FEE-9B87-B5F6593571EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DadJokes_App", "..\DadJokes_App\DadJokes_App.csproj", "{BFFD6678-DB0D-44F8-9483-C6F2554C89BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BBAF5F0B-11A5-4FEE-9B87-B5F6593571EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBAF5F0B-11A5-4FEE-9B87-B5F6593571EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBAF5F0B-11A5-4FEE-9B87-B5F6593571EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFD6678-DB0D-44F8-9483-C6F2554C89BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFD6678-DB0D-44F8-9483-C6F2554C89BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFD6678-DB0D-44F8-9483-C6F2554C89BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFD6678-DB0D-44F8-9483-C6F2554C89BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
